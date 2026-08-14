@@ -1,12 +1,25 @@
 # Volleyball-Detector
 
- Add short description of project here > 
+ Hi my name is Shailoh Arias.For my final project on the Jetson Nano, and for my final project I decided to make a volleyball detector. The point of the project is to help coaches or players to train better.  
 
 ![add image descrition here](direct image link here)
 
 ## The Algorithm
+cd ~/jetson-inference/ 
+This is to change to the different directory.
+./docker/run.sh
+This is to run the docker container.
+cd  python/training/detection/ssd 
+Change into the detection ssd directory
+python3 open_images_downloader.py --max-images=2500 \
+--class-names "Volleyball" \
+--data=data/volleyball 
+This is how i downloaded the dataset
+ python3 train_ssd.py --data=data/rf_volleyball --model-dir=models/rf_model --batch-size=4 --epochs=30
+This is how i trained my model
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+This project uses a condensed version of [this](https://universe.roboflow.com/wenxuans-workspace/volleyball-7yzmq/dataset/3) volleyball object-detection dataset from Roboflow. The model was trained on 1092 images.
+
 
 ## Running this project
 
