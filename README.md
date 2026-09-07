@@ -2,8 +2,6 @@
 
  Hi my name is Shailoh Arias.For my final project on the Jetson Nano, and for my final project I decided to make a volleyball detector. The point of the project is to help coaches or players to train better.  
 
-![add image descrition here](direct image link here)
-
 ## The Algorithm
 This project uses a condensed version of [this](https://universe.roboflow.com/wenxuans-workspace/volleyball-7yzmq/dataset/3) volleyball object-detection dataset from Roboflow. The model was trained on 1092 images.
 
