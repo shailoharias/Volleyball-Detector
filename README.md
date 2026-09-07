@@ -11,12 +11,19 @@ This project uses a condensed version of [this](https://universe.roboflow.com/we
 - `./docker/run.sh`
 - `cd  python/training/detection/ssd`
 - `python3 train_ssd.py --data=data/rf_volleyball --model-dir=models/rf_model --batch-size=4 --epochs=30`
-This is how i trained my model
 
 
 ## Running this project
+Clone the project repo
+`git clone https://github.com/shailoharias/Volleyball-Detector.git`
+Change into the project folder
+- `cd Volleyball-Detector`
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
+Set the network variable
+-`NET=model`
+
+Run this command to test on a live recording:
+-`detectnet  --model=$NET/ssd-mobilenet.onnx  --labels=$NET/labels.txt     --input-blob=input_0  --output-cvg=scores  --output-bbox=boxes      /dev/video0 output.mp4`
+
 
 [View a video explanation here](video link)
