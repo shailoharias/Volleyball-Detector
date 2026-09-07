@@ -5,15 +5,13 @@
 ![add image descrition here](direct image link here)
 
 ## The Algorithm
-cd ~/jetson-inference/ 
+-cd ~/jetson-inference/ 
 This is to change to the different directory.
-./docker/run.sh
+-./docker/run.sh
 This is to run the docker container.
-cd  python/training/detection/ssd 
+-cd  python/training/detection/ssd 
 Change into the detection ssd directory
-python3 open_images_downloader.py --max-images=2500 \
---class-names "Volleyball" \
---data=data/volleyball 
+- 
 This is how i downloaded the dataset
  python3 train_ssd.py --data=data/rf_volleyball --model-dir=models/rf_model --batch-size=4 --epochs=30
 This is how i trained my model
